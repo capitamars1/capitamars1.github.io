@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMITUAL | Official Storefront</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .card-hover {
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      border-color: #ffffff;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+  <!-- Top Announcement Banner -->
+  <div class="bg-white text-black text-xs font-bold uppercase tracking-widest text-center py-2 px-4">
+    Limited Capsule Drop — Free Shipping on Orders Over $75
+  </div>
+
+  <!-- Navigation -->
+  <header class="border-b border-neutral-800 py-6 px-6 max-w-6xl mx-auto w-full flex justify-between items-center">
+    <a href="#" class="text-2xl font-black tracking-tighter uppercase">EMITUAL</a>
+    <nav class="space-x-6 text-sm text-neutral-400">
+      <a href="#drop" class="hover:text-white transition">Shop Drop</a>
+      <a href="#about" class="hover:text-white transition">Quality</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-4xl mx-auto text-center py-20 px-6">
+    <span class="text-xs uppercase tracking-widest text-neutral-400 border border-neutral-800 rounded-full px-4 py-1.5">
+      Capsule 001 // Available Now
+    </span>
+    <h1 class="text-5xl md:text-6xl font-black tracking-tight uppercase mt-6 mb-4">
+      Built for Purpose. <br/> Engineered to Last.
+    </h1>
+    <p class="text-neutral-400 max-w-xl mx-auto text-base md:text-lg mb-8">
+      Heavyweight, pre-shrunk apparel crafted for daily grind and elevated comfort. Once this batch sells out, it won't restock.
+    </p>
+    <a href="#drop" class="inline-block bg-white text-black font-bold uppercase tracking-wider text-sm px-8 py-4 rounded hover:bg-neutral-200 transition">
+      Explore the Drop
+    </a>
+  </section>
+
+  <!-- Product Grid -->
+  <main id="drop" class="max-w-6xl mx-auto px-6 py-12 w-full">
+    <h2 class="text-xl font-bold uppercase tracking-wider mb-8 border-b border-neutral-800 pb-4">
+      Featured Releases
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Product 1 -->
+      <div class="bg-neutral-900 border border-

@@ -3,62 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EMITUAL | Official Storefront</title>
+  <title>DAILY DROP CO. | Trending Everyday Goods</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      background-color: #0a0a0a;
-      color: #f5f5f5;
+      background-color: #f8fafc;
+      color: #0f172a;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
-    .card-hover {
-      transition: transform 0.25s ease, border-color 0.25s ease;
+    .product-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .card-hover:hover {
+    .product-card:hover {
       transform: translateY(-4px);
-      border-color: #ffffff;
+      box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.15);
     }
   </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between">
 
-  <!-- Top Announcement Banner -->
-  <div class="bg-white text-black text-xs font-bold uppercase tracking-widest text-center py-2 px-4">
-    Limited Capsule Drop — Free Shipping on Orders Over $75
+  <!-- Urgency Banner -->
+  <div class="bg-indigo-600 text-white text-xs font-semibold tracking-wide text-center py-2.5 px-4">
+    🔥 TODAY'S TRENDING DROPS — Fast US Shipping & 30-Day Easy Returns
   </div>
 
-  <!-- Navigation -->
-  <header class="border-b border-neutral-800 py-6 px-6 max-w-6xl mx-auto w-full flex justify-between items-center">
-    <a href="#" class="text-2xl font-black tracking-tighter uppercase">EMITUAL</a>
-    <nav class="space-x-6 text-sm text-neutral-400">
-      <a href="#drop" class="hover:text-white transition">Shop Drop</a>
-      <a href="#about" class="hover:text-white transition">Quality</a>
-    </nav>
+  <!-- Clean Retail Header -->
+  <header class="bg-white border-b border-slate-200 py-4 px-6 sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <a href="#" class="text-xl font-extrabold tracking-tight text-slate-900">DAILY DROP <span class="text-indigo-600">CO.</span></a>
+      <nav class="space-x-6 text-sm font-medium text-slate-600">
+        <a href="#bestsellers" class="hover:text-indigo-600">Bestsellers</a>
+        <a href="#reviews" class="hover:text-indigo-600">Why Us</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="max-w-4xl mx-auto text-center py-20 px-6">
-    <span class="text-xs uppercase tracking-widest text-neutral-400 border border-neutral-800 rounded-full px-4 py-1.5">
-      Capsule 001 // Available Now
-    </span>
-    <h1 class="text-5xl md:text-6xl font-black tracking-tight uppercase mt-6 mb-4">
-      Built for Purpose. <br/> Engineered to Last.
-    </h1>
-    <p class="text-neutral-400 max-w-xl mx-auto text-base md:text-lg mb-8">
-      Heavyweight, pre-shrunk apparel crafted for daily grind and elevated comfort. Once this batch sells out, it won't restock.
-    </p>
-    <a href="#drop" class="inline-block bg-white text-black font-bold uppercase tracking-wider text-sm px-8 py-4 rounded hover:bg-neutral-200 transition">
-      Explore the Drop
-    </a>
+  <!-- Hero Section (High-Conversion Retail Style) -->
+  <section class="bg-white border-b border-slate-200 py-14 px-6 text-center">
+    <div class="max-w-3xl mx-auto">
+      <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+        ★ Top Rated Viral Finds
+      </span>
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mt-4 mb-4">
+        The Internet’s Favorite Everyday Graphic Goods.
+      </h1>
+      <p class="text-slate-600 text-base md:text-lg mb-8">
+        Printed fresh to order on ultra-soft apparel, drinkware, and accessories. Grab this week's top-selling designs before they rotate out.
+      </p>
+      <a href="#bestsellers" class="inline-block bg-indigo-600 text-white font-bold text-sm px-8 py-4 rounded-lg shadow hover:bg-indigo-700 transition">
+        Shop Current Bestsellers →
+      </a>
+    </div>
   </section>
 
-  <!-- Product Grid -->
-  <main id="drop" class="max-w-6xl mx-auto px-6 py-12 w-full">
-    <h2 class="text-xl font-bold uppercase tracking-wider mb-8 border-b border-neutral-800 pb-4">
-      Featured Releases
-    </h2>
+  <!-- Bestsellers Grid -->
+  <main id="bestsellers" class="max-w-6xl mx-auto px-6 py-12 w-full">
+    <div class="flex justify-between items-end mb-8">
+      <div>
+        <h2 class="text-2xl font-extrabold text-slate-900">Trending Right Now</h2>
+        <p class="text-sm text-slate-500">Updated weekly based on top social trends</p>
+      </div>
+    </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-      <!-- Product 1 -->
-      <div class="bg-neutral-900 border border-
+      <!-- Viral Item 1: Comfort Colors Style Graphic Tee -->
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden flex flex-col justify-between product-card">
+        <div>
+          <div class="relative aspect-square bg-slate-100">
+            <span class="absolute top-3 left-3 bg-rose-600 text-white text-xs font-bold px-2.5 py-1 rounded">BESTSELLER</span>
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Trending Graphic Tee" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-5">
+            <div class="text-amber-500 text-xs font-bold mb-1">★★★★★ <span class="text-slate-400 font-normal">(142)</span></div>
+            <h3 class="font-bold text-lg text-slate-900">Vintage Wash Everyday Graphic Tee</h3>
+            <p class="text-slate-500 text-sm mt-1 mb-3">
+              Garment-dyed Comfort Colors 1717 style relaxed fit. Soft, lived-in feel from day one.
+            </p>
+            <div class="flex items-center gap-2">
+              <span class="font-extrabold text-xl text-slate-900">$27.99</span>
+              <span class="text-sm text-slate-400 line-through">$35.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 pt-0">
+          <a href="#" class="block w-full text-center bg-slate-900 text-white font-bold text-sm py-3.5 rounded-lg hover:bg-indigo-600 transition">
+            Instant Checkout
+          </a>
+        </div>
+      </div>
+
+      <!-- Viral Item 2: Funny / Relatable Office Mug -->
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden flex flex-col justify-between product-card">
+        <div>
+          <div class="relative aspect-square bg-slate-100">
+            <span class="absolute top-3 left-3 bg-indigo-600 text-white text-xs font-bold px-2.5 py-1 rounded">VIRAL GIFT</span>
+            <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=800&q=80" alt="Statement Ceramic Mug" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-5">
+            <div class="text-amber-500 text-xs font-bold mb-1">★★★★★ <span class="text-slate-400 font-normal">(89)</span></div>
+            <h3 class="font-bold text-lg text-slate-900">15oz Sarcastic Workday Ceramic Mug</h3>
+            <p class="text-slate-500 text-sm mt-1 mb-3">
+              Dishwasher & microwave safe high-gloss ceramic. The #1 impulse gift for coworkers and coffee lovers.
+            </p>
+            <div class="flex items-center gap-2">
+              <span class="font-extrabold text-xl text-slate-900">$18.99</span>
+              <span class="text-sm text-slate-400 line-through">$24.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 pt-0">
+          <a href="#" class="block w-full text-center bg-slate-900 text-white font-bold text-sm py-3.5 rounded-lg hover:bg-indigo-600 transition">
+            Instant Checkout
+          </a>
+        </div>
+      </div>
+
+      <!-- Viral Item 3: Cozy Crewneck Sweatshirt -->
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden flex flex-col justify-between product-card">
+        <div>
+          <div class="relative aspect-square bg-slate-100">
+            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-2.5 py-1 rounded">TRENDING</span>
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80" alt="Retro Crewneck Sweatshirt" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-5">
+            <div class="text-amber-500 text-xs font-bold mb-1">★★★★★ <span class="text-slate-400 font-normal">(215)</span></div>
+            <h3 class="font-bold text-lg text-slate-900">Oversized Retro Aesthetic Crewneck</h3>
+            <p class="text-slate-500 text-sm mt-1 mb-3">
+              Fleece-lined Gildan 18000 / Bella+Canvas sponge fleece blend. High-definition DTG print that never cracks.
+            </p>
+            <div class="flex items-center gap-2">
+              <span class="font-extrabold text-xl text-slate-900">$38.99</span>
+              <span class="text-sm text-slate-400 line-through">$48.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 pt-0">
+          <a href="#" class="block w-full text-center bg-slate-900 text-white font-bold text-sm py-3.5 rounded-lg hover:bg-indigo-600 transition">
+            Instant Checkout
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Trust Signals -->
+  <section id="reviews" class="bg-white border-t border-slate-200 py-12 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div>
+        <h4 class="font-bold text-slate-900 mb-1">🚚 Fast US Fulfillment</h4>
+        <p class="text-slate-500 text-sm">Printed and shipped from local US facilities within 2–4 business days.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-900 mb-1">🔒 100% Secure Checkout</h4>
+        <p class="text-slate-500 text-sm">One-click Apple Pay, Google Pay, and encrypted card checkout via Stripe.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-900 mb-1">✨ Print Quality Guarantee</h4>
+        <p class="text-slate-500 text-sm">If your print ever arrives flawed, we send a free replacement—no questions asked.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-400 py-8 px-6 text-center text-xs">
+    <p>&copy; 2026 Daily Drop Co. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
